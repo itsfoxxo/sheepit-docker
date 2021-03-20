@@ -10,7 +10,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN printf '#!/bin/sh\nexit 0' > /usr/sbin/policy-rc.d
 
-RUN \
+RUN RUNLEVEL=1 \
 # MAN folder needed for jre install
 	mkdir -p \
 		/usr/share/man/man1 \
