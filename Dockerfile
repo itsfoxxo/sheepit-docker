@@ -10,7 +10,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 RUN printf '#!/bin/sh\nexit 0' > /usr/sbin/policy-rc.d
 
-RUN RUNLEVEL=1 \
+RUN \
 # MAN folder needed for jre install
 	mkdir -p \
 		/usr/share/man/man1 \
@@ -41,7 +41,7 @@ RUN RUNLEVEL=1 \
 	&& rm -rf \
 		/var/lib/apt/lists/* \
 		/tmp/*
-
+RUN apache2ctl start
 ADD startrenderer.sh /sheep/startrenderer.sh
 RUN chmod +x /sheep/startrenderer.sh
 
