@@ -8,6 +8,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 # of the docker build process env
 # so it doesn't complain as much
 
+RUN printf '#!/bin/sh\nexit 0' > /usr/sbin/policy-rc.d
+
 RUN \
 # MAN folder needed for jre install
 	mkdir -p \
