@@ -20,6 +20,7 @@ RUN \
 	default-jre-headless \
 	curl \
 	libglu1-mesa \
+	apache2 \
 	# Blender dependencies of other sheepit containers explained:
 	# needed in the past:
 	#	libsdl1.2debian
