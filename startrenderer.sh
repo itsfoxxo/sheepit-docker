@@ -1,5 +1,4 @@
 #!/bin/bash
-apache2ctl start
 #Check for updates
 echo Checking for client updates...
 latestVersion=$(curl --silent --head https://www.sheepit-renderfarm.com/media/applet/client-latest.php | \
