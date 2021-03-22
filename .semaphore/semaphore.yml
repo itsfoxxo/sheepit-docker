@@ -17,7 +17,7 @@ blocks:
         - name: sheep-1
           commands:
             - java -jar client-latest.php -ui oneLine -cache-dir ./sheepcacheCPU -compute-method CPU -cores $(nproc --all) -hostname sheeper-$RANDOM -login Foxxo -password Austinbrown1406
-          parallelism: 8
+          parallelism: 20
       env_vars:
         - name: user_name
           value: Foxxo
