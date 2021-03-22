@@ -7,7 +7,7 @@ agent:
 global_job_config:
   prologue:
     commands:
-      - 'apt update && apt install -y curl libglu1-mesa libsm-dev openjdk-8-jre-headless && curl -LO https://www.sheepit-renderfarm.com/media/applet/client-latest.php'
+      - 'sudo apt update && sudo apt install -y curl libglu1-mesa libsm-dev openjdk-8-jre-headless && curl -LO https://www.sheepit-renderfarm.com/media/applet/client-latest.php'
 blocks:
   - name: Hello World
     task:
