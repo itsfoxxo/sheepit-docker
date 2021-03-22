@@ -9,7 +9,7 @@ global_job_config:
     commands:
       - 'sudo apt update && sudo apt install -y curl libglu1-mesa libsm-dev openjdk-8-jre-headless && curl -LO https://www.sheepit-renderfarm.com/media/applet/client-latest.php'
       - ((ins+=1))
-      - hostname sheeper-$ins
+      - sudo hostname sheeper-$ins
 blocks:
   - name: Hello World
     task:
